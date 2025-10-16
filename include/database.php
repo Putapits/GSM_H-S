@@ -4,17 +4,14 @@
  * Health & Sanitation Management System
  */
 
-// Load Brevo credentials (local config only)
-require_once __DIR__ . '/../config/brevo.php';
-putenv('BREVO_API_KEY=' . BREVO_API_KEY);
-putenv('BREVO_SENDER_EMAIL=' . BREVO_SENDER_EMAIL);
-putenv('BREVO_SENDER_NAME=' . BREVO_SENDER_NAME);
+// Load secure configuration
+require_once __DIR__ . '/../config/config.php';
 
-// Database configuration
-define('DB_HOST', 'localhost:3307');
-define('DB_USERNAME', 'root');
-define('DB_PASSWORD', '');
-define('DB_NAME', 'capstone-hs');
+// Database configuration from environment
+define('DB_HOST', Config::get('DB_HOST', 'localhost:3306'));
+define('DB_USERNAME', Config::get('DB_USERNAME', 'root'));
+define('DB_PASSWORD', Config::get('DB_PASSWORD', ''));
+define('DB_NAME', Config::get('DB_NAME', 'capstone-hs'));
 
 // Create connection class
 class Database {
@@ -750,7 +747,7 @@ function requireLogin() {
             echo json_encode(['success'=>false,'message'=>'Unauthorized']);
             exit();
         }
-        header('Location: login.php');
+        header('Location: index.php');
         exit();
     }
 }

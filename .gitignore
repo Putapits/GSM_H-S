@@ -19,7 +19,12 @@ composer.lock
 .env
 .env.local
 .env.production
+config/.env
+config/.env.*
+!config/.env.example
 
 # OS generated files
 Thumbs.db
 .DS_Store
+
+
