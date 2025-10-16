@@ -199,14 +199,14 @@ session_start();
                     </form>
                     <div class="text-sm text-slate-500 flex items-center gap-2 justify-center">
                         <span>Or</span>
-                        <a href="login.php" class="text-blue-600 font-semibold hover:underline">Login with Password</a>
+                        <a href="index.php" class="text-blue-600 font-semibold hover:underline">Login with Password</a>
                     </div>
                     <div class="text-sm text-slate-400">
-                        Don't have an account? <a href="login.php#register" class="text-blue-600 font-semibold hover:underline">Create one here</a>
+                        Don't have an account? <a href="index.php#register" class="text-blue-600 font-semibold hover:underline">Create one here</a>
                     </div>
                     <div>
-                        <a href="login.php" class="inline-flex items-center gap-2 text-sm text-slate-400 hover:text-slate-600">
-                            <i class="fas fa-arrow-left"></i> Back login
+                        <a href="index.php" class="inline-flex items-center gap-2 text-sm text-slate-400 hover:text-slate-600">
+                            <i class="fas fa-arrow-left"></i> Back loginll
                         </a>
                     </div>
                 </div>

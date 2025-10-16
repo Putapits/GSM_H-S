@@ -54,7 +54,7 @@ include 'header.php';
                             Verify your account to request this service
                         </a>
                         <?php else: ?>
-                        <a href="login.php" class="w-full bg-gray-600 hover:bg-gray-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-200 block text-center">
+                        <a href="index.php" class="w-full bg-gray-600 hover:bg-gray-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-200 block text-center">
                             Login to Request Service
                         </a>
                         <?php endif; ?>
@@ -82,7 +82,7 @@ include 'header.php';
                             Verify your account to request this service
                         </a>
                         <?php else: ?>
-                        <a href="login.php" class="w-full bg-gray-600 hover:bg-gray-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-200 block text-center">
+                        <a href="index.php" class="w-full bg-gray-600 hover:bg-gray-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-200 block text-center">
                             Login to Request Service
                         </a>
                         <?php endif; ?>
@@ -110,7 +110,7 @@ include 'header.php';
                             Verify your account to request this service
                         </a>
                         <?php else: ?>
-                        <a href="login.php" class="w-full bg-gray-600 hover:bg-gray-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-200 block text-center">
+                        <a href="index.php" class="w-full bg-gray-600 hover:bg-gray-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-200 block text-center">
                             Login to Request Service
                         </a>
                         <?php endif; ?>
@@ -148,7 +148,7 @@ include 'header.php';
                             Verify your account to request this service
                         </a>
                         <?php else: ?>
-                        <a href="login.php" class="w-full bg-gray-600 hover:bg-gray-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-200 block text-center">
+                        <a href="index.php" class="w-full bg-gray-600 hover:bg-gray-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-200 block text-center">
                             Login to Request Service
                         </a>
                         <?php endif; ?>
@@ -177,7 +177,7 @@ include 'header.php';
                             Verify your account to request this service
                         </a>
                         <?php else: ?>
-                        <a href="login.php" class="w-full bg-gray-600 hover:bg-gray-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-200 block text-center">
+                        <a href="index.php" class="w-full bg-gray-600 hover:bg-gray-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-200 block text-center">
                             Login to Request Service
                         </a>
                         <?php endif; ?>
@@ -216,7 +216,7 @@ include 'header.php';
                             Verify your account to request this service
                         </a>
                         <?php else: ?>
-                        <a href="login.php" class="w-full bg-gray-600 hover:bg-gray-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-200 block text-center">
+                        <a href="index.php" class="w-full bg-gray-600 hover:bg-gray-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-200 block text-center">
                             Login to Request Service
                         </a>
                         <?php endif; ?>
@@ -246,7 +246,7 @@ include 'header.php';
                             Verify your account to request this service
                         </a>
                         <?php else: ?>
-                        <a href="login.php" class="w-full bg-gray-600 hover:bg-gray-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-200 block text-center">
+                        <a href="index.php" class="w-full bg-gray-600 hover:bg-gray-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-200 block text-center">
                             Login to Request Service
                         </a>
                         <?php endif; ?>
@@ -283,7 +283,7 @@ include 'header.php';
                             Verify your account to request this service
                         </a>
                         <?php else: ?>
-                        <a href="login.php" class="w-full bg-gray-600 hover:bg-gray-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-200 block text-center">
+                        <a href="index.php" class="w-full bg-gray-600 hover:bg-gray-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-200 block text-center">
                             Login to Request Service
                         </a>
                         <?php endif; ?>
@@ -312,7 +312,7 @@ include 'header.php';
                             Verify your account to request this service
                         </a>
                         <?php else: ?>
-                        <a href="login.php" class="w-full bg-gray-600 hover:bg-gray-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-200 block text-center">
+                        <a href="index.php" class="w-full bg-gray-600 hover:bg-gray-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-200 block text-center">
                             Login to Request Service
                         </a>
                         <?php endif; ?>
@@ -340,7 +340,7 @@ include 'header.php';
                             Verify your account to request this service
                         </a>
                         <?php else: ?>
-                        <a href="login.php" class="w-full bg-gray-600 hover:bg-gray-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-200 block text-center">
+                        <a href="index.php" class="w-full bg-gray-600 hover:bg-gray-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-200 block text-center">
                             Login to Request Service
                         </a>
                         <?php endif; ?>
@@ -378,7 +378,7 @@ include 'header.php';
                             Verify your account to request this service
                         </a>
                         <?php else: ?>
-                        <a href="login.php" class="w-full bg-gray-600 hover:bg-gray-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-200 block text-center">
+                        <a href="index.php" class="w-full bg-gray-600 hover:bg-gray-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-200 block text-center">
                             Login to Request Service
                         </a>
                         <?php endif; ?>
@@ -407,7 +407,7 @@ include 'header.php';
                             Verify your account to request this service
                         </a>
                         <?php else: ?>
-                        <a href="login.php" class="w-full bg-gray-600 hover:bg-gray-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-200 block text-center">
+                        <a href="index.php" class="w-full bg-gray-600 hover:bg-gray-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-200 block text-center">
                             Login to Request Service
                         </a>
                         <?php endif; ?>

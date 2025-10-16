@@ -5,7 +5,7 @@ startSecureSession();
 
 // Check if user is logged in
 if (!isset($_SESSION['user_id']) || !isset($_SESSION['role'])) {
-    header('Location: ../login.php');
+    header('Location: ../index.php');
     exit();
 }
 
@@ -20,7 +20,7 @@ if ($_SESSION['role'] !== 'citizen') {
 $user = $database->getUserById($_SESSION['user_id']);
 if (!$user || $user['status'] !== 'active') {
     session_destroy();
-    header('Location: ../login.php?error=account_inactive');
+    header('Location: ../index.php?error=account_inactive');
     exit();
 }
 

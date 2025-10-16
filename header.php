@@ -214,7 +214,7 @@ $headerIsLoggedIn = isset($_SESSION['user_id']) && isset($_SESSION['role']);
                             </a>
                             <a href="logout.php" class="text-white hover:bg-blue-700 px-3 py-2 rounded-md text-sm font-medium">Logout</a>
                         <?php else: ?>
-                            <a href="login.php" class="text-white hover:bg-blue-700 px-3 py-2 rounded-md text-sm font-medium">Login</a>
+                            <a href="index.php" class="text-white hover:bg-blue-700 px-3 py-2 rounded-md text-sm font-medium">Login</a>
                         <?php endif; ?>
                     </div>
                 </div>
@@ -271,7 +271,7 @@ $headerIsLoggedIn = isset($_SESSION['user_id']) && isset($_SESSION['role']);
                     <a href="logout.php" class="text-white block px-3 py-2 rounded-md text-base font-medium">Logout</a>
                 <?php else: ?>
                     <a href="website.php#appointment" class="bg-accent hover:bg-green-700 text-white block px-3 py-2 rounded-md text-base font-medium">Book Appointment</a>
-                    <a href="login.php" class="text-white block px-3 py-2 rounded-md text-base font-medium">Login</a>
+                    <a href="index.php" class="text-white block px-3 py-2 rounded-md text-base font-medium">Login</a>
                     <a href="register.php" class="text-white block px-3 py-2 rounded-md text-base font-medium">Register</a>
                 <?php endif; ?>
             </div>

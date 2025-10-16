@@ -14,9 +14,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
 
 require_once __DIR__ . '/../include/database.php';
 require_once __DIR__ . '/../vendor/autoload.php';
-require_once __DIR__ . '/../services/BrevoEmailService.php';
+require_once __DIR__ . '/../services/PHPMailerService.php';
 
-use App\Services\BrevoEmailService;
+use App\Services\PHPMailerService;
 
 function sendResponse($success, $message, $data = null, $httpCode = 200) {
     http_response_code($httpCode);
@@ -76,13 +76,13 @@ function userTableHasColumn(PDO $pdo, $column) {
     return in_array($column, fetchUserColumns($pdo), true);
 }
 
-function getBrevoService() {
+function getMailerService() {
     static $service = null;
     if ($service === null) {
         try {
-            $service = BrevoEmailService::fromEnv();
-        } catch (InvalidArgumentException $e) {
-            error_log('Brevo configuration error: ' . $e->getMessage());
+            $service = PHPMailerService::fromConfig();
+        } catch (\Exception $e) {
+            error_log('PHPMailer configuration error: ' . $e->getMessage());
             $service = false;
         }
     }
@@ -272,13 +272,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $otp = generateOtpCode();
             storeOtp($pdo, $email, $otp);
 
-            $brevo = getBrevoService();
-            if (!$brevo) {
+            $mailer = getMailerService();
+            if (!$mailer) {
                 sendResponse(false, 'Email service not configured.', null, 500);
             }
 
             $name = trim(($result['first_name'] ?? '') . ' ' . ($result['last_name'] ?? '')) ?: 'User';
-            if (!$brevo->sendOtp($email, $name, $otp)) {
+            if (!$mailer->sendOtp($email, $name, $otp)) {
                 sendResponse(false, 'Failed to send OTP. Please try again later.', null, 500);
             }
 
@@ -394,13 +394,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $otp = generateOtpCode();
                 storeOtp($pdo, $email, $otp);
 
-                $brevo = getBrevoService();
-                if (!$brevo) {
+                $mailer = getMailerService();
+                if (!$mailer) {
                     sendResponse(false, 'Email service not configured.', null, 500);
                 }
 
                 $name = trim(($user['first_name'] ?? '') . ' ' . ($user['last_name'] ?? '')) ?: 'User';
-                if (!$brevo->sendOtp($email, $name, $otp)) {
+                if (!$mailer->sendOtp($email, $name, $otp)) {
                     sendResponse(false, 'Failed to send OTP. Please try again later.', null, 500);
                 }
 
